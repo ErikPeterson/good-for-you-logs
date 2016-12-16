@@ -11,6 +11,6 @@
   "repository": "https://github.com/ErikPeterson/good-for-you-logs.git",
   "dependencies": {
     "winston": "^2.3.0",
-    "winstond": "0.0.2"
+    "winstond": "0.0.3"
   }
 }

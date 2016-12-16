@@ -3,6 +3,6 @@
 const logger = require('winston');
 const config = require('./config')();
 
-logger.addTransport(logger.transports.Http, config);
+logger.add(logger.transports.Http, config);
 
 module.exports = logger;
