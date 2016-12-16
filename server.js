@@ -1,12 +1,12 @@
 'use strict';
 
-const config = require('./config');
+const config = require('./config')();
 const winstond = require('winstond');
 
 const server = winstond.http.createServer({
 	services: ['collect', 'query', 'stream'],
-	port: config.listener.port,
-	path: config.listener.path
+	port: config.port,
+	path: config.path
 });
 
-server.add(winstond.transports.File, {filename: config.listener.filename});
+server.add(winstond.transports.File, {filename: config.filename});
